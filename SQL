@@ -1,1 +1,32 @@
-SQL>desc dapartements; select* from dapartements;
+***exercie1***
+1/SQL>desc dapartements; select* from dapartements;
+2/SQL>desc employees; select* from  employees;
+3/SQL>select* distinct from  employees;
+4/SQL>select id as "EMP", last Name as " Employer",Job_id as "Job",Hire_date as "Hire Date "from  employees;
+5/SQL>select First Name,Employer,Job_id as "Employer and Title" from  employees;
+***exercice2***
+1/select Last Name,Salary from  employees where(salary>12000);
+2/select Last Name,Departement id from  employees where(Employee_id=176);
+3/select Last Name,Salary from  employees where Salary Not between(5000 and 12000);
+4/select Last Name, first Name,Job_id,Hire_date from  employees where (Last Name="Matos and Taylor") order by (Hire_date Asc);
+5/select Last Name, Departement_id from  employees where (Departement_id =20 and Departement_id =50 ) order by (Last Name);
+6/select First Name, Last Name from  employees where (Salary between(5000 and 12000) and Departement_id=20 or Departement_id=50 ;
+7/select Last Name,Job_id from employees where Manager_id=isNull;
+8/select Last Name,Salary,commission_PCT from employees where commission_PCT=is notNull;
+9/select* From employees where(Last Name="_ _ _a");
+10select* From employees where Last Name like "%a" and Last Name like "%e";
+11/select Last Name,Salary,commission_PCT From employees where (commission_PCT=20%);
+***exercice3***
+1/select employees_id,Last Name,Salary,Salary+15% as NEW_Salary From employees;
+2/select employees_id,Last Name,Salary,Salary+15% as increase,Salary+15% as NEW_Salary From employees;
+3/select Last Name,length(Last Name)From employees where Last Name like "%J" or Last Name like "%A" or Last Name like "%M";4/
+4/select Last Name,LPAD(Salary,15,"$") as Salary from employees;
+5/select Last Name,NVL(commission_PCT),'No commission" as commission from employees;
+6/select NEXT_DAY(date_embauche,"MONDAY") From employees;
+7/select date_embauche,TRUNC(date_embauche,"YEAR")From employees;
+8/select datedate_embauche,TRUNC(SYSDATE)-TRUNC(date_embauche)From employees;
+
+
+
+
+
