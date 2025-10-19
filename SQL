@@ -19,12 +19,12 @@
 ***exercice3***
 1/select employees_id,Last Name,Salary,Salary+15% as NEW_Salary From employees;
 2/select employees_id,Last Name,Salary,Salary+15% as increase,Salary+15% as NEW_Salary From employees;
-3/select Last Name,length(Last Name)From employees where Last Name like "%J" or Last Name like "%A" or Last Name like "%M";4/
+3/select Last Name,length(Last Name)From employees where Last Name like "%J" or Last Name like "%A" or Last Name like "%M";
 4/select Last Name,LPAD(Salary,15,"$") as Salary from employees;
 5/select Last Name,NVL(commission_PCT),'No commission" as commission from employees;
 6/select NEXT_DAY(date_embauche,"MONDAY") From employees;
 7/select date_embauche,TRUNC(date_embauche,"YEAR")From employees;
-8/select datedate_embauche,TRUNC(SYSDATE)-TRUNC(date_embauche)From employees;
+8/select date_embauche,TRUNC(SYSDATE)-TRUNC(date_embauche)From employees;
 
 
 
